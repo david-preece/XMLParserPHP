@@ -6,7 +6,7 @@
  * Time: 14:56
  */
 
-class TimeStampGenerator {
+class TimeStampFactory {
 
     //Static class
     private function __construct()
