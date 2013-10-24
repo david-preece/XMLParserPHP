@@ -22,15 +22,11 @@ class TimeStampXMLFactory {
         {
             $value = explode ('/', $key);
             $timeStampChild = $TimeStampXML->addChild('timestamp');
-            echo $value[0] . $value[1];
-            foreach ($value as $attributes)
-            {
-                //$timeStampChild->addAttribute('time', $attributes[0]);
-                //$timeStampChild->addAttribute('text', $attributes[1]);
-            }
+
+            $timeStampChild->addAttribute('time', $value[0]);
+            $timeStampChild->addAttribute('text', $value[1]);
         }
 
-        echo $TimeStampXML->asXML();
-        echo 'Test';
+        return $TimeStampXML->asXML();
     }
 }

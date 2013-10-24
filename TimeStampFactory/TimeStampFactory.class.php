@@ -14,7 +14,8 @@ class TimeStampFactory {
     }
 
     // TODO add type checking to class!!!!
-    // This class returns an array of formatted DateTime classes. Format output is 'U Y-m-d H:i:s' or Epoch Year-Month-Day Hour:Minutes:Seconds
+    // This class returns an array of DateTime classes from the start year provided until the current year.
+    // This method only returns 30th June @ 1pm. Default year is 1970
     static public function CreateTimeStampArray ($startYear = 1970)
     {
         // Retrieve the current year for calculations later on.
@@ -33,7 +34,7 @@ class TimeStampFactory {
 
             // Format the DateTime for easy use in the XML file.
             // TODO this should be completed by the function that called this one. Should just return the DateTime array
-            // $dateTimeToAdd = $dateTimeToAdd->format('U/Y-m-d/H:i:s');
+            $dateTimeToAdd = $dateTimeToAdd->format('U/Y-m-d/H:i:s');
 
             // Add the DateTime to the stack
             array_push ($stackToReturn, $dateTimeToAdd);

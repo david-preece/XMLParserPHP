@@ -5,12 +5,14 @@
  * Date: 23/10/13
  * Time: 22:42
  */
+include './TimeStampFactory.class.php';
 
 class TimeStampFactoryTest extends PHPUnit_Framework_TestCase {
 
-    public function testClassShouldExist()
+    public function testShouldReturnArray()
     {
-        $this->assertFalse (false);
+        $rw  = TimeStampFactory::CreateTimeStampArray();
+        $this->assertNotEmpty($rw);
     }
 }
  
