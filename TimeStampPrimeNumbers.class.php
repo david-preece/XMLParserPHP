@@ -28,7 +28,7 @@ class TimeStampPrimeNumbers implements ITimeStamper
         try
         {
             $newStack = array();
-            for ($i = 0; $i < count(array($this->_formattedSimpleXML)); $i++)
+            for ($i = 0; $i < count($this->_formattedSimpleXML); $i++)
             {
                 $splitTimeStamp = explode ('/', $this->_formattedSimpleXML[$i]);
                 $yearToTest = substr($splitTimeStamp[1], 0, 4);

@@ -1,6 +1,6 @@
 <?php
-include_once './TimeStamp/TimeStampArrayFactory.class.php';
-include_once './TimeStampPrimeNumbers.class.php';
+include_once '../TimeStamp/TimeStampArrayFactory.class.php';
+include_once '../TimeStampPrimeNumbers.class.php';
 
 class TimeStampPrimeNumbersTest extends PHPUnit_Framework_TestCase {
 
